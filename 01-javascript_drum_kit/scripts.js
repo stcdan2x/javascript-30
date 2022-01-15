@@ -1,7 +1,9 @@
 window.addEventListener("keydown", (e) => {
 	//get element based on pressed key
-	const currentAudio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-	const currentKey = document.querySelector(`div[data-key="${e.keyCode}"]`);
+	const currentAudio = document.querySelector(`audio[data-key="${e.keyCode}"]`),
+		currentKey = document.querySelector(`div[data-key="${e.keyCode}"]`),
+		messageBox = document.querySelector(".message-container"),
+		keyChar = document.querySelector(".letter");
 
 	if (currentKey) {
 		if (currentKey.classList.contains("playing")) {
@@ -16,6 +18,8 @@ window.addEventListener("keydown", (e) => {
 
 		setTimeout(() => currentKey.classList.remove("playing"), 90);
 	} else {
-		alert("Please press the keys displayed on screen");
+		keyChar.innerHTML = `"${e.key}"`;
+		messageBox.classList.add("show");
+		setTimeout(() => messageBox.classList.remove("show"), 1000);
 	}
 });

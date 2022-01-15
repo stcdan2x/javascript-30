@@ -8,42 +8,49 @@
 		<title>JS Drum Kit</title>
 	</head>
 	<body>
-		<div class="keys">
-			<div data-key="65" class="key">
-				<kbd>A</kbd>
-				<span class="sound">clap</span>
+		<div class="main-container">
+			<div class="keys">
+				<div data-key="65" class="key">
+					<kbd>A</kbd>
+					<span class="sound">clap</span>
+				</div>
+				<div data-key="83" class="key">
+					<kbd>S</kbd>
+					<span class="sound">hihat</span>
+				</div>
+				<div data-key="68" class="key">
+					<kbd>D</kbd>
+					<span class="sound">kick</span>
+				</div>
+				<div data-key="70" class="key">
+					<kbd>F</kbd>
+					<span class="sound">openhat</span>
+				</div>
+				<div data-key="71" class="key">
+					<kbd>G</kbd>
+					<span class="sound">boom</span>
+				</div>
+				<div data-key="72" class="key">
+					<kbd>H</kbd>
+					<span class="sound">ride</span>
+				</div>
+				<div data-key="74" class="key">
+					<kbd>J</kbd>
+					<span class="sound">snare</span>
+				</div>
+				<div data-key="75" class="key">
+					<kbd>K</kbd>
+					<span class="sound">tom</span>
+				</div>
+				<div data-key="76" class="key">
+					<kbd>L</kbd>
+					<span class="sound">tink</span>
+				</div>
 			</div>
-			<div data-key="83" class="key">
-				<kbd>S</kbd>
-				<span class="sound">hihat</span>
-			</div>
-			<div data-key="68" class="key">
-				<kbd>D</kbd>
-				<span class="sound">kick</span>
-			</div>
-			<div data-key="70" class="key">
-				<kbd>F</kbd>
-				<span class="sound">openhat</span>
-			</div>
-			<div data-key="71" class="key">
-				<kbd>G</kbd>
-				<span class="sound">boom</span>
-			</div>
-			<div data-key="72" class="key">
-				<kbd>H</kbd>
-				<span class="sound">ride</span>
-			</div>
-			<div data-key="74" class="key">
-				<kbd>J</kbd>
-				<span class="sound">snare</span>
-			</div>
-			<div data-key="75" class="key">
-				<kbd>K</kbd>
-				<span class="sound">tom</span>
-			</div>
-			<div data-key="76" class="key">
-				<kbd>L</kbd>
-				<span class="sound">tink</span>
+
+			<div class="message-container">
+				<div class="message1 message"><span class="letter"></span> is an invalid key</div>
+				<div class="message2 message">Please press the keys displayed on screen</div>
 			</div>
 		</div>
 
@@ -57,6 +64,6 @@
 		<audio data-key="75" src="sounds/tom.wav"></audio>
 		<audio data-key="76" src="sounds/tink.wav"></audio>
 
-		<script src="script.js"></script>
+		<script src="./scripts.js"></script>
 	</body>
 </html>
